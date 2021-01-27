@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+.margin {
+    margin: 8% 0;
+}
+
+.parallax {
+    background: url("unnamed.png")
+        no-repeat fixed;
+    background-size: cover
+}
+
+.parallax-inner {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-left:auto;
+    margin-right:auto;
+    width: 31em;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    color: #FFFFFF;
+    font-family: Courier;
+    background-color: #000000;
+}
+
+td.bgcell, td.bgbttn, th {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+th {
+    background-color: #242726;
+    border: 1px solid #242726;
+}
+
+td.bgcell {
+    background-color: #26324A;
+    border: 1px solid #26324A;
+}
+
+td.bgbttn {
+    background-color: #2E3233;
+    border: 1px solid #2E3233;
+}
+
+input[type=number] {
+    width: 70px;
+}
+
+select{
+    width: 70px;
+}
+
+button.calculate{
+    margin-left: auto;
+    margin-right: auto;
+    width: 7em;
+    height: 3em;
+    color: #FFFFFF;
+    background-color: #2E3233;
+    font-family: Courier;
+
+}
+
+#res {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+    height: 2em;
+    background-color: #26324A;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#calc {
+    margin: 20px;
+}
+
+.small-table {
+    width:250px;
+}

@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pace Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="margin"></div>
+
+    <section class="parallax">
+        <div class="parallax-inner">
+            <h1>Pace Calculator</h1>
+            <h2>by Jackson Clark</h2>
+            <!-- entire pace calc table -->
+            <table id="calc">
+                <tr>
+                    <th>Time</th>
+                    <td class="bgcell">
+                        <!-- time input/output -->
+                        <div class="small-table">
+                            <table>
+                                <tr>
+                                    <td>
+                                        hours
+                                    </td>
+                                    <td>
+                                        mins
+                                    </td>
+                                    <td>
+                                        secs
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="number" id="hr">
+                                    </td>
+                                    <td>
+                                        <input type="number" id="min">
+                                    </td>
+                                    <td>
+                                        <input type="number" id="sec">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="bgbttn"><button class="calculate"  onclick="calcTime()">Calculate Time</button></td>
+                </tr>
+                <tr>
+                    <th>Distance</th>
+                    <td class="bgcell">
+                        <!-- distance input/output -->
+                        <div class="small-table">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="number" id="dist">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="units" id="unit">
+                                            <option value="m">Meters</option>
+                                            <option value="km">Kilometers</option>
+                                            <option value="mi" selected>Miles</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        or
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="event" id="event">
+                                            <option value="none" selected>Event</option>
+                                            <option value="5k">5k</option>
+                                            <option value="mile">Mile</option>
+                                            <option value="800">800</option>
+                                            <option value="400">400</option>
+                                            <option value="200">200</option>
+                                            <option value="half">Half Marathon</option>
+                                            <option value="full">Marathon</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="bgbttn"><button class="calculate" onclick="calcDistance()">Calculate Distance</button></td>
+                </tr>
+                <tr>
+                    <th>Pace</th>
+                    <td class="bgcell">
+                        <!-- pace input/output -->
+                        <div class="small-table">
+                            <table>
+                                <tr>
+                                    <td>hr</td>
+                                    <td>min</td>
+                                    <td>sec</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="phr"></td>
+                                    <td><input type="number" id="pmin"></td>
+                                    <td><input type="number" id="psec"></td>
+                                </tr>
+                                <tr>
+                                    <td>Per <br>
+                                        <select name="punit" id="punit">
+                                            <option value="pmile">Mile</option>
+                                            <option value="pkm">Kilometer</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="bgbttn"><button class="calculate"  onclick="calcPace()">Calculate Pace</button></td>
+                </tr>
+            </table>
+            <button id="res" onclick="window.location.reload();">Reset</button>
+        </div>
+    </section>
+
+    <div class="margin"></div>
+    <script src="script.js"></script>
+</body>
+</html>
